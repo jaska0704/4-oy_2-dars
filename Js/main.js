@@ -6,6 +6,32 @@ let onion = document.querySelector(".btn-o");
 let salad = document.querySelector(".btn-s");
 let tomato = document.querySelector(".btn-t");
 let pickle = document.querySelector(".btn-p");
+let select = document.querySelector("#language");
+const allLang = ['en', 'ru', 'uz'];
+
+select.addEventListener("change", changeURLLanguage);
+
+function changeURLLanguage() {
+    let lang = select.value;
+    location.href = window.location.pathname + '#' + lang;
+    location.reload();
+}
+
+function changeLanguage() {
+    let hash =window.location.hash;
+    hash = hash.substring(1);
+    if (!allLang.includes(hash)) {
+         location.href = window.location.pathname + "#uz";
+         location.reload();
+    }
+    select.value = hash;
+    // document.querySelector("title").innerHTML = langArr['tileLang'][hash];
+}
+changeLanguage();
+console.log(langArr["tileLang"]);
+
+
+
 cheese.addEventListener("click", (e) => {
   e.preventDefault();
   const sir = document.createElement("div");
