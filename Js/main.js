@@ -19,16 +19,18 @@ function changeURLLanguage() {
 
 function changeLanguage() {
     let hash =window.location.hash;
-    hash = hash.substring(1);
+    hash = hash.substr(1);
     if (!allLang.includes(hash)) {
          location.href = window.location.pathname + "#uz";
          location.reload();
     }
     select.value = hash;
-    // document.querySelector("title").innerHTML = langArr['tileLang'][hash];
+    for (let key in langArr) {
+      document.querySelector(".lng-"+key).innerHTML = langArr[key][hash]
+    }
 }
 changeLanguage();
-console.log(langArr["tileLang"]);
+
 
 
 
