@@ -69,6 +69,9 @@ salad.addEventListener("click", (e) => {
     hisob -= 1;
     total.textContent = `Total:  ${hisob}$ dollar`;
   });
+  if(salad < 2){
+   return alert("mumkinmas")
+  }
 });
 tomato.addEventListener("click", (e) => {
   e.preventDefault();
@@ -101,6 +104,7 @@ pickle.addEventListener("click", (e) => {
     hisob -= 3;
     total.textContent = `Total:  ${hisob}$ dollar`;
   });
+  
 });
 let hisob = 2;
 let total = document.querySelector(".total");
@@ -120,3 +124,4 @@ send.addEventListener("click", (e) => {
   let random = Math.floor(Math.random() * 25) + 10;
   queue.innerHTML = `Your queue is ${random}`;
 });
+
