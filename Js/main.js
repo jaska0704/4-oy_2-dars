@@ -6,6 +6,7 @@ let onion = document.querySelector(".btn-o");
 let salad = document.querySelector(".btn-s");
 let tomato = document.querySelector(".btn-t");
 let pickle = document.querySelector(".btn-p");
+let sent = document.querySelector("#send")
 cheese.addEventListener("click", (e) => {
   e.preventDefault();
   const sir = document.createElement("div");
@@ -125,3 +126,17 @@ send.addEventListener("click", (e) => {
   queue.innerHTML = `Your queue is ${random}`;
 });
 
+
+
+     var savedOrders = JSON.parse(localStorage.getItem("orders")) || [];
+
+     function submitOrder() {
+       // Get the current order
+       var currentOrder = "Burger with Lettuce, Cheese, and Meat";
+
+       // Save the order to localStorage
+       savedOrders.push(currentOrder);
+       localStorage.setItem("orders", JSON.stringify(savedOrders));
+
+       alert("Burger buyurtmangiz qabul qilindi! Ishonchingiz uchun rahmat!");
+     }
