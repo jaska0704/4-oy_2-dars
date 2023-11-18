@@ -12,7 +12,7 @@ const langArr = {
     "onion":{
         "uz":"Piyoz - 12 281 so'm",
         "en":"Onion - $1",
-        "ru":"лук - 88,79 ₽",
+        "ru":"Лук - 88,79 ₽",
     },
     "salad":{
         "uz":"Salat - 12 281 so'm",
@@ -22,7 +22,7 @@ const langArr = {
     "tomato":{
         "uz":"Pomidor - 24 569,04 so'm",
         "en":"Tomato - $2",
-        "ru":"помидор - 177,93 ₽",
+        "ru":"Помидор - 177,93 ₽",
     },
     "pickle":{
         "uz":"Bodring - 36 845,99 so'm",
@@ -37,7 +37,7 @@ const langArr = {
     "title":{
         "uz":"Burger buyurtma",
         "en":"Burger order",
-        "ru":"заказ бургера",
+        "ru":"Заказ бургера",
     },
     "Cheese":{
         "uz":"Pishloq",
@@ -52,7 +52,7 @@ const langArr = {
     "Onion":{
         "uz":"Piyoz",
         "en":"Onion",
-        "ru":"лук",
+        "ru":"Лук",
     },
     "Salad":{
         "uz":"Salat",
@@ -62,7 +62,7 @@ const langArr = {
     "Tomato":{
         "uz":"Pomidor",
         "en":"Tomato",
-        "ru":"помидор",
+        "ru":"Помидор",
     },
     "Pickle":{
         "uz":"Bodring",
