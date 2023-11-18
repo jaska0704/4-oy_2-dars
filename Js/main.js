@@ -46,30 +46,45 @@ cheese.addEventListener("click", (e) => {
   sir.style.height = "30px";
   sir.style.zIndex = "7";
   masalliq.prepend(sir);
-  if(select.value === "uz"){
-    
-    hisob+=24590
+  if(select.value === "uz"){ 
+    hisob+=7975
     total.textContent = `Total:  ${hisob} so'm`;
   }else if(select.value === "ru"){
-    hisob+= 177
-    
+    hisob+= 56.90;
     total.textContent = `Total:  ${hisob} ₽`;
   }else{
-    hisob += 2;
+    hisob += 0.65;
+    total.textContent = `Total:  $${hisob} dollor`;
   }
   
   
   sir.addEventListener("click", (e) => {
     sir.innerHTML = "";
     masalliq.removeChild(sir);
-    hisob -= 2;
-    total.textContent = `Total:  ${hisob}$ dollar`;
+    if (select.value === "uz") {
+      hisob -= 7975;
+      total.textContent = `Total:  ${hisob} so'm`;
+    } else if (select.value === "ru") {
+      hisob -= 56.9;
+      total.textContent = `Total:  ${hisob} ₽`;
+    } else {
+      hisob -= 0.65;
+      total.textContent = `Total:  $${hisob} dollor`;
+    }
   });
 });
 meat.addEventListener("click", (e) => {
   e.preventDefault();
-  hisob += 5;
-  total.textContent = `Total:  ${hisob}$ dollar`;
+ if (select.value === "uz") {
+   hisob += 14220;
+   total.textContent = `Total:  ${hisob} so'm`;
+ } else if (select.value === "ru") {
+   hisob += 101.55;
+   total.textContent = `Total:  ${hisob} ₽`;
+ } else {
+   hisob += 1.20;
+   total.textContent = `Total:  $${hisob} dollor`;
+ }
   const meat = document.createElement("div");
   meat.innerHTML = `<img src="https://mega-burger.netlify.app/burger-layers/meat.svg" alt="meat" />`;
   meat.style.zIndex = "9";
@@ -78,15 +93,31 @@ meat.addEventListener("click", (e) => {
   meat.addEventListener("click", (e) => {
     meat.innerHTML = "";
     masalliq.removeChild(meat);
-    hisob -= 5;
-    total.textContent = `Total:  ${hisob}$ dollar`;
+   if (select.value === "uz") {
+     hisob -= 14220;
+     total.textContent = `Total:  ${hisob} so'm`;
+   } else if (select.value === "ru") {
+     hisob -= 101.55;
+     total.textContent = `Total:  ${hisob} ₽`;
+   } else {
+     hisob -= 1.2;
+     total.textContent = `Total:  $${hisob} dollor`;
+   }
   });
 });
 onion.addEventListener("click", (e) => {
   e.preventDefault();
   const onion = document.createElement("div");
-  hisob += 1;
-  total.textContent = `Total:  ${hisob}$ dollar`;
+  if (select.value === "uz") {
+    hisob += 3680;
+    total.textContent = `Total:  ${hisob} so'm`;
+  } else if (select.value === "ru") {
+    hisob += 26.28;
+    total.textContent = `Total:  ${hisob} ₽`;
+  } else {
+    hisob += 0.30;
+    total.textContent = `Total:  $${hisob} dollor`;
+  }
   onion.innerHTML = `<img src="https://mega-burger.netlify.app/burger-layers/onion.svg" alt="onion" />`;
   masalliq.prepend(onion);
   onion.style.height = "25px";
@@ -94,15 +125,31 @@ onion.addEventListener("click", (e) => {
   onion.addEventListener("click", (e) => {
     onion.innerHTML = "";
     masalliq.removeChild(onion);
-    hisob -= 1;
-    total.textContent = `Total:  ${hisob}$ dollar`;
+   if (select.value === "uz") {
+     hisob -= 3680;
+     total.textContent = `Total:  ${hisob} so'm`;
+   } else if (select.value === "ru") {
+     hisob -= 26.28;
+     total.textContent = `Total:  ${hisob} ₽`;
+   } else {
+     hisob -= 0.3;
+     total.textContent = `Total:  $${hisob} dollor`;
+   }
   });
 });
 salad.addEventListener("click", (e) => {
   e.preventDefault();
   const salad = document.createElement("div");
-  hisob += 1;
-  total.textContent = `Total:  ${hisob}$ dollar`;
+ if (select.value === "uz") {
+   hisob += 4908;
+   total.textContent = `Total:  ${hisob} so'm`;
+ } else if (select.value === "ru") {
+   hisob += 35.05;
+   total.textContent = `Total:  ${hisob} ₽`;
+ } else {
+   hisob += 0.4;
+   total.textContent = `Total:  $${hisob} dollor`;
+ }
   salad.innerHTML = `<img src="https://mega-burger.netlify.app/burger-layers/salad.svg" alt="salad" />`;
   masalliq.prepend(salad);
   salad.style.height = "30px";
@@ -110,8 +157,16 @@ salad.addEventListener("click", (e) => {
   salad.addEventListener("click", (e) => {
     salad.innerHTML = "";
     masalliq.removeChild(salad);
-    hisob -= 1;
-    total.textContent = `Total:  ${hisob}$ dollar`;
+   if (select.value === "uz") {
+     hisob -= 4908;
+     total.textContent = `Total:  ${hisob} so'm`;
+   } else if (select.value === "ru") {
+     hisob -= 35.05;
+     total.textContent = `Total:  ${hisob} ₽`;
+   } else {
+     hisob -= 0.4;
+     total.textContent = `Total:  $${hisob} dollor`;
+   }
   });
   if(salad < 2){
    return alert("mumkinmas")
@@ -120,8 +175,16 @@ salad.addEventListener("click", (e) => {
 tomato.addEventListener("click", (e) => {
   e.preventDefault();
   const tomato = document.createElement("div");
-  hisob += 2;
-  total.textContent = `Total:  ${hisob}$ dollar`;
+ if (select.value === "uz") {
+   hisob += 6135;
+   total.textContent = `Total:  ${hisob} so'm`;
+ } else if (select.value === "ru") {
+   hisob += 43.80;
+   total.textContent = `Total:  ${hisob} ₽`;
+ } else {
+   hisob += 0.5;
+   total.textContent = `Total:  $${hisob} dollor`;
+ }
   tomato.innerHTML = `<img src="https://mega-burger.netlify.app/burger-layers/tomato.svg" alt="tomato" />`;
   masalliq.prepend(tomato);
   tomato.style.height = "30px";
@@ -129,15 +192,31 @@ tomato.addEventListener("click", (e) => {
   tomato.addEventListener("click", (e) => {
     tomato.innerHTML = "";
     masalliq.removeChild(tomato);
-    hisob -= 2;
-    total.textContent = `Total:  ${hisob}$ dollar`;
+    if (select.value === "uz") {
+      hisob -= 6135;
+      total.textContent = `Total:  ${hisob} so'm`;
+    } else if (select.value === "ru") {
+      hisob -= 43.8;
+      total.textContent = `Total:  ${hisob} ₽`;
+    } else {
+      hisob -= 0.5;
+      total.textContent = `Total:  $${hisob} dollor`;
+    }
   });
 });
 pickle.addEventListener("click", (e) => {
   e.preventDefault();
   const pickle = document.createElement("div");
-  hisob += 3;
-  total.textContent = `Total:  ${hisob}$ dollar`;
+  if (select.value === "uz") {
+    hisob += 6135;
+    total.textContent = `Total:  ${hisob} so'm`;
+  } else if (select.value === "ru") {
+    hisob += 43.8;
+    total.textContent = `Total:  ${hisob} ₽`;
+  } else {
+    hisob += 0.5;
+    total.textContent = `Total:  $${hisob} dollor`;
+  }
   pickle.innerHTML = `<img src="https://mega-burger.netlify.app/burger-layers/pickle.svg" alt="" />`;
   masalliq.prepend(pickle);
   pickle.style.height = "25px";
@@ -145,22 +224,29 @@ pickle.addEventListener("click", (e) => {
   pickle.addEventListener("click", (e) => {
     pickle.innerHTML = "";
     masalliq.removeChild(pickle);
-    hisob -= 3;
-    total.textContent = `Total:  ${hisob}$ dollar`;
+    if (select.value === "uz") {
+      hisob -= 6135;
+      total.textContent = `Total:  ${hisob} so'm`;
+    } else if (select.value === "ru") {
+      hisob -= 43.8;
+      total.textContent = `Total:  ${hisob} ₽`;
+    } else {
+      hisob -= 0.5;
+      total.textContent = `Total:  $${hisob} dollor`;
+    }
   });
   
 });
 let total = document.querySelector(".total");
-let hisob = 2;
+let hisob = 0.5;
  if (select.value === "uz") {
-   hisob += 24590;
-   total.textContent = `Total:  ${hisob} so'm`;
+   hisob = 6135;
+   total.textContent = `Hisob:  ${hisob} so'm`;
  } else if (select.value === "ru") {
-   hisob += 177;
-
-   total.textContent = `Total:  ${hisob} ₽`;
+   hisob = 43.80;
+   total.textContent = `Счёт:  ${hisob} ₽`;
  } else {
-   hisob += 0;
+   hisob = 0.5;
    total.textContent = `Total:  ${hisob} $`;
 
  }
@@ -170,15 +256,30 @@ let queue = document.querySelector(".queue");
 retry.addEventListener("click", (e) => {
   e.preventDefault();
   masalliq.innerHTML = "";
-  hisob = 2;
-  total.textContent = `Total:  ${hisob}$ dollar`;
+ if (select.value === "uz") {
+   hisob = 6135;
+   total.textContent = `Hisob:  ${hisob} so'm`;
+ } else if (select.value === "ru") {
+   hisob = 43.8;
+   total.textContent = `Счёт:  ${hisob} ₽`;
+ } else {
+   hisob = 0.5;
+   total.textContent = `Total:  ${hisob} $`;
+ }
   queue.innerHTML = "";
 });
 let send = document.querySelector(".send");
 send.addEventListener("click", (e) => {
   e.preventDefault();
   let random = Math.floor(Math.random() * 25) + 10;
-  queue.innerHTML = `Your queue is ${random}`;
+  if (select.value === "uz") {
+     queue.innerHTML = `Buyurtmangiz raqami ${random}`;
+  } else if (select.value === "ru") {
+     queue.innerHTML = `Ваш номер заказа ${random}`;
+  } else {
+    queue.innerHTML = `Your queue is ${random}`;
+  }
+  
 
   
 });
