@@ -19,6 +19,8 @@ function changeURLLanguage() {
     location.reload();
 }
 
+
+
 function changeLanguage() {
     let hash =window.location.hash;
     hash = hash.substr(1);
