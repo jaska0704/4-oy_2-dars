@@ -74,12 +74,18 @@ const langArr = {
     en: "Retry",
     ru: "Повторить",
   },
-  Send: {
-    uz: "burger buyurtma",
-    en: "burger order",
-    ru: "заказ бургера",
-  },
-  
+//   Send: {
+//     uz: "burger buyurtma",
+//     en: "burger order",
+//     ru: "заказ бургера",
+//   },
+
+
+       "Send":{
+       "uz":"Jo'natish",
+        "en":"Send",
+       "ru":"Отправлять",
+   },
 };
 
 //     "cheese":{
