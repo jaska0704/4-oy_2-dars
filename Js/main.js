@@ -46,8 +46,19 @@ cheese.addEventListener("click", (e) => {
   sir.style.height = "30px";
   sir.style.zIndex = "7";
   masalliq.prepend(sir);
-  hisob += 2;
-  total.textContent = `Total:  ${hisob}$ dollar`;
+  if(select.value === "uz"){
+    
+    hisob+=24590
+    total.textContent = `Total:  ${hisob} so'm`;
+  }else if(select.value === "ru"){
+    hisob+= 177
+    
+    total.textContent = `Total:  ${hisob} ₽`;
+  }else{
+    hisob += 2;
+  }
+  
+  
   sir.addEventListener("click", (e) => {
     sir.innerHTML = "";
     masalliq.removeChild(sir);
@@ -139,9 +150,21 @@ pickle.addEventListener("click", (e) => {
   });
   
 });
-let hisob = 2;
 let total = document.querySelector(".total");
-total.textContent = `Total:  ${hisob}$ dollar`;
+let hisob = 2;
+ if (select.value === "uz") {
+   hisob += 24590;
+   total.textContent = `Total:  ${hisob} so'm`;
+ } else if (select.value === "ru") {
+   hisob += 177;
+
+   total.textContent = `Total:  ${hisob} ₽`;
+ } else {
+   hisob += 0;
+   total.textContent = `Total:  ${hisob} $`;
+
+ }
+  
 let retry = document.getElementById("retry");
 let queue = document.querySelector(".queue");
 retry.addEventListener("click", (e) => {
