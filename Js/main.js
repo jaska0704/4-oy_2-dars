@@ -21,6 +21,7 @@ function changeURLLanguage() {
 
 
 
+
 function changeLanguage() {
     let hash =window.location.hash;
     hash = hash.substr(1);
@@ -30,7 +31,10 @@ function changeLanguage() {
     }
     select.value = hash;
     for (let key in langArr) {
-      document.querySelector(".lng-"+key).innerHTML = langArr[key][hash]
+        let elem = document.querySelector('.lng-' + key);
+        if (elem) {
+            elem.innerHTML = langArr[key][hash];
+        }
     }
 }
 changeLanguage();
