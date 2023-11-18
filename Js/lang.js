@@ -1,15 +1,8 @@
 const langArr = {
-
-    "cheeseLang":{
+    "cheese":{
         "uz":"pishloq ",
         "en":"cheese",
         "ru":"сыр",
-    },
-    "cheese":{
-        "uz":"Pishloq - 24 569,04 so'm ",
-        "en":"Cheese - $2",
-        "ru":"Cыр - 177,93 ₽",
-
     },
     "meat":{
         "uz":"Go'sht - 61 400,99 so'm",
@@ -62,9 +55,9 @@ const langArr = {
         "ru":"Лук",
     },
     "Salad":{
-        "uz":"Salat",
-        "en":"Salad",
-        "ru":"Cалат",
+        "uz":"salat",
+        "en":"salad",
+        "ru":"салат",
     },
     "Tomato":{
         "uz":"Pomidor",
@@ -72,19 +65,19 @@ const langArr = {
         "ru":"Помидор",
     },
     "Pickle":{
-        "uz":"Bodring",
-        "en":"Pickle",
-        "ru":"Oгурец",
+        "uz":"bodring",
+        "en":"pickle",
+        "ru":"огурец ",
     },
     "Retry":{
-        "uz":"Takroran",
-        "en":"Retry",
-        "ru":"Повторить",
+        "uz":"non",
+        "en":"bread",
+        "ru":"хлеб",
     },
     "Send":{
-        "uz":"Jo'natish",
-        "en":"Send",
-        "ru":"Отправлять",
+        "uz":"burger buyurtma",
+        "en":"burger order",
+        "ru":"заказ бургера",
     },
 
 }

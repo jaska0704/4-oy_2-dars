@@ -7,7 +7,6 @@ let salad = document.querySelector(".btn-s");
 let tomato = document.querySelector(".btn-t");
 let pickle = document.querySelector(".btn-p");
 
-let sent = document.querySelector("#send")
 
 let select = document.querySelector("#language");
 const allLang = ['en', 'ru', 'uz'];
