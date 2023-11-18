@@ -1,6 +1,6 @@
 const langArr = {
     "cheese":{
-        "uz":"pishloq ",
+        "uz":"Pishloq - ",
         "en":"cheese",
         "ru":"сыр",
     },
@@ -70,14 +70,14 @@ const langArr = {
         "ru":"огурец ",
     },
     "Retry":{
-        "uz":"non",
-        "en":"bread",
-        "ru":"хлеб",
+        "uz":"Takroran",
+        "en":"Retry",
+        "ru":"Повторить",
     },
     "Send":{
-        "uz":"burger buyurtma",
-        "en":"burger order",
-        "ru":"заказ бургера",
+        "uz":"Jo'natish",
+        "en":"Send",
+        "ru":"Отправлять",
     },
 
 }
