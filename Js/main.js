@@ -39,12 +39,6 @@ function changeLanguage() {
 }
 changeLanguage();
 
-
-
-
-
-
-
 cheese.addEventListener("click", (e) => {
   e.preventDefault();
   const sir = document.createElement("div");
