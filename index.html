@@ -11,9 +11,16 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title>Burger</title>
+    <title>Burger Order</title>
   </head>
   <body class="">
+    <header class="header container">
+        <select name="language" id="language">
+            <option value="uz" selected>UZ</option>
+            <option value="ru">RU</option>
+            <option value="en">EN</option>
+        </select>
+    </header>
     <div
       class="container my-5 mx-auto d-flex justify-content-center flex-wrap gap-5"
     >
@@ -29,13 +36,13 @@
 
       <div class="right">
         <div class="narxlar">
-          <h3>Cheese - 2$</h3>
-          <h3>Meat - 5$</h3>
-          <h3>Onion - 1$</h3>
-          <h3>Salad - 1$</h3>
-          <h3>Tomato - 2$</h3>
-          <h3>Pickle - 3$</h3>
-          <h3>Bread - 2$</h3>
+          <h3 class="cheese">Cheese - 2$</h3>
+          <h3 class="meat">Meat - 5$</h3>
+          <h3 class="onion">Onion - 1$</h3>
+          <h3 class="salad">Salad - 1$</h3>
+          <h3 class="tomato">Tomato - 2$</h3>
+          <h3 class="pickle">Pickle - 3$</h3>
+          <h3 class="bread">Bread - 2$</h3>
         </div>
         <form class="my-4">
           <button
@@ -88,8 +95,11 @@
       class="fw-bold d-flex align-items-center justify-content-center queue text-info"
     ></h1>
 
-   
 
+
+
+
+    <script src="Js/lang.js"></script>
 
     <script src="Js/main.js"></script>
   </body>
