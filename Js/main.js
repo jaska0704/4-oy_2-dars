@@ -6,6 +6,9 @@ let onion = document.querySelector(".btn-o");
 let salad = document.querySelector(".btn-s");
 let tomato = document.querySelector(".btn-t");
 let pickle = document.querySelector(".btn-p");
+
+let sent = document.querySelector("#send")
+
 let select = document.querySelector("#language");
 const allLang = ['en', 'ru', 'uz'];
 
@@ -30,6 +33,9 @@ function changeLanguage() {
     }
 }
 changeLanguage();
+
+
+
 
 
 
@@ -151,5 +157,8 @@ send.addEventListener("click", (e) => {
   e.preventDefault();
   let random = Math.floor(Math.random() * 25) + 10;
   queue.innerHTML = `Your queue is ${random}`;
+
+  
 });
+
 

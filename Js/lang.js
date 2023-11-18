@@ -1,8 +1,15 @@
 const langArr = {
+
+    "cheeseLang":{
+        "uz":"pishloq ",
+        "en":"cheese",
+        "ru":"сыр",
+    },
     "cheese":{
         "uz":"Pishloq - 24 569,04 so'm ",
         "en":"Cheese - $2",
         "ru":"Cыр - 177,93 ₽",
+
     },
     "meat":{
         "uz":"Go'sht - 61 400,99 so'm",
