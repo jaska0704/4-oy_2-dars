@@ -11,7 +11,7 @@ inputFile.onchange = function () {
 
 btn.addEventListener("click", () => {
   if (img["src"].includes("profil")) {
-    hero.style["display"] = "none";
+    hero.style["display"] = "flex";
     alert("Iltimos rasm kiriting!");
   } else {
     hero.style["display"] = "none";
