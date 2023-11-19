@@ -6,9 +6,10 @@ let onion = document.querySelector(".btn-o");
 let salad = document.querySelector(".btn-s");
 let tomato = document.querySelector(".btn-t");
 let pickle = document.querySelector(".btn-p");
-
-
+let button = document.querySelector(".button")
 let select = document.querySelector("#language");
+let body = document.querySelector("body");
+
 const allLang = ['en', 'ru', 'uz'];
 
 select.addEventListener("change", changeURLLanguage);
@@ -17,9 +18,12 @@ function changeURLLanguage() {
     let lang = select.value;
     location.href = window.location.pathname + '#' + lang;
     location.reload();
+    hero1.style["display"] = "none";
 }
 
-
+button.addEventListener("click", ()=> {
+  body.classList.toggle("dark");
+});
 
 
 function changeLanguage() {
@@ -28,6 +32,7 @@ function changeLanguage() {
     if (!allLang.includes(hash)) {
          location.href = window.location.pathname + "#uz";
          location.reload();
+         hero1.style["display"] = "none";
     }
     select.value = hash;
     for (let key in langArr) {

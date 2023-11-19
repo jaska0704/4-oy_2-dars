@@ -1,9 +1,12 @@
 let profilePic = document.querySelector("#profile-pic");
 let inputFile = document.querySelector("#input-file");
-let btn = document.querySelector("#btn")
-let hero = document.querySelector(".hero")
+// let btn = document.querySelector("#btn")
+// let hero = document.querySelector(".hero")
 
-let input = document.querySelector("input")
+// let input = document.querySelector("input")
+let btn = document.querySelector("#btn");
+let hero = document.querySelector(".hero");
+let input = document.querySelector("input");
 let img = document.querySelector(".image1");
 let img2 = document.querySelector(".image2");
 let closeX = document.querySelector(".close")
@@ -23,10 +26,11 @@ closeX.addEventListener("click", () => {
 
 btn.addEventListener("click", () => {
   if (img["src"].includes("profil")) {
-    hero.style["display"] = "flex";
-    alert("Iltimos rasm kiriting!")
+    hero.style["display"] = "none";
+    alert("Iltimos rasm kiriting!");
   } else {
     hero.style["display"] = "none";
+
     img2["src"] = img["src"] ;
     // h2.textContent = "Your profile pic"
 
@@ -41,3 +45,4 @@ btn.addEventListener("click", () => {
 // if()
 
 // })
+
