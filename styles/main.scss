@@ -4,9 +4,14 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+
 body {
-  background-color: #ccc;
+  // background-color: #ccc;
   font-family: sans-serif;
+  background-color: var(--body-color);
+  transition: 0.5s ease-in-out;
+  // height: 100vh;
 }
 .noni-b {
   display: flex;
@@ -30,6 +35,10 @@ select{
   width: 100px;
   height: 30px;
   text-align: center;
+  position:relative;
+  top: 20px;
+ 
+ 
 
 }
 
@@ -55,6 +64,10 @@ select{
   border-radius: 15px;
   text-align: center;
   color: #333;
+}
+
+.text-h2{
+  margin-left: -3rem;
 }
 
 
@@ -84,6 +97,39 @@ label{
   cursor: pointer;
 }
 
-input{
+.files{
   display: none;
+}
+
+.first, .last{
+  border: none;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.image2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-right: 100px;
+  object-fit: cover;
+}
+
+
+.dark-mode{
+    background: black;
+    color: white;
+}
+
+.fas{
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
 }

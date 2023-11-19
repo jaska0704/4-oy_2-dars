@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,39 +11,55 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title class="lng-title">Burger Buyurtma</title>
   </head>
   <body class="">
-      <div class="hero">
-    <div class="card">
-      <h1>Elon Musk</h1>
-      <p>@elonmusk</p>
-      <img src="profile.png" id="profile-pic">
-      <label for="input-file">Upload image</label>
-      <input type="file" accept="image/jpeg, image/png, image/jpg " id="input-file">
-     <div class="d-flex justify-content-around gap-4 w-100">
-       <button id="btn" class="btn btn-success w-50">Tasdiqlash</button>
-      <button class="btn btn-danger w-50 " id="delete">Image Delete</button>
+    <div class="hero">
+      <div class="card">
+        <i class="close fa-solid fa-xmark fa-3x"></i>
+        <img class="image1" src="profile.png" id="profile-pic" />
+        <label for="input-file">Upload image</label>
+        <input class="files"
+          type="file"
+          accept="image/jpeg, image/png, image/jpg "
+          id="input-file"
+        />
+
+        <button id="btn" class="btn btn-success ">Tasdiqlash</button>
+      </div>
     </div>
-     </div>
-  </div>
-    <header class="header container">
-        <select name="language" id="language">
-            <option value="uz" selected>UZ</option>
-            <option value="ru">RU</option>
-            <option value="en">EN</option>
-        </select>
+    <header class="container header container d-flex justify-content-between ">
+      <select   name="language" id="language">
+        <option value="uz" selected>UZ</option>
+        <option value="ru">RU</option>
+        <option value="en">EN</option>
+      </select>
+      
+      <i onclick="darkMode()" class="fas fa-moon fa-3x"></i>
+      <div class="">
+        <img class="image2" src="" alt="" title="Your profile picture" />
+        <h2 class="lng-h2  text-h2"></h2>
+      </div>
     </header>
     <div
       class="container my-5 mx-auto d-flex justify-content-center flex-wrap gap-5"
     >
       <main class="burger my-auto">
         <div class="noni-b">
-          <img src="https://mega-burger.netlify.app/burger-layers/top-bread.svg" alt="bread" class="up" />
+          <img
+            src="https://mega-burger.netlify.app/burger-layers/top-bread.svg"
+            alt="bread"
+            class="up"
+          />
         </div>
         <div class="masalliq"></div>
         <div class="noni-bo">
-          <img src="https://mega-burger.netlify.app/burger-layers/bottom-bread.svg" alt="bb" class="down" />
+          <img
+            src="https://mega-burger.netlify.app/burger-layers/bottom-bread.svg"
+            alt="bb"
+            class="down"
+          />
         </div>
       </main>
 
@@ -91,20 +107,25 @@
         </form>
         <form>
           <button
-            class="lng-Retry btn btn-warning text-danger fw-bold py-2 px-5 my-4 mx-5" id="retry"
+            class="lng-Retry btn btn-warning text-danger fw-bold py-2 px-5 my-4 mx-5"
+            id="retry"
           >
             Retry
           </button>
-
 
           <!-- <button id="send3"
             class="let-Send btn btn-warning text-light fw-bold py-2 px-5 my-4 mx-5 send">
             placing an order
         </button> -->
 
-
-          <button id="send3"
-            class="lng-Send btn btn-warning text-light fw-bold py-2 px-5 my-4 mx-5 send" id="send" onclick="AppDate()">Send</button>
+          <button
+            id="send3"
+            class="lng-Send btn btn-warning text-light fw-bold py-2 px-5 my-4 mx-5 send"
+            id="send"
+            
+          >
+            Send
+          </button>
         </form>
         <h2 class="total"></h2>
       </div>
@@ -113,30 +134,9 @@
       class="fw-bold d-flex align-items-center justify-content-center queue text-info"
     ></h1>
 
-    <div class="col-12 mt-5 text-center">
-      <table class="table table-bordered" id="crudTable">
-        <thead>
-          <tr>
-            <th>t/r</th>
-            <th>Mahsulot nomi</th>
-            <th>Narxi</th>
-            <th>Vaqti</th>
-          </tr>
-        </thead>
-      </table>
-      <!-- <table border="1">
-        <thead>
-          <tr>
-            <th> t/r</th>
-            <th> Mahsulot nomi</th>
-            <th> Narxi</th>
-            <th> Vaqti</th>
-          </tr>
-        </thead>
-      </table> -->
+    
+  
     </div>
-
-
 
 
 
@@ -145,11 +145,6 @@
 
     <script src="Js/main.js"></script>
     <script src="Js/image.js"></script>
+    <script src="Js/dark.js"></script>
   </body>
-</html> 
-
- 
-
-
-
-
+</html>

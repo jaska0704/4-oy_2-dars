@@ -272,6 +272,15 @@ let send = document.querySelector(".send");
 send.addEventListener("click", (e) => {
   e.preventDefault();
   let random = Math.floor(Math.random() * 25) + 10;
+  if(hisob === 6135 ){
+    alert("siz hali buyurtma bermadingiz")
+  }
+  if (hisob === 43.8) {
+    alert("вы еще не оформили заказ");
+  }
+  if (hisob === 0.5) {
+    alert("you haven't placed an order yet");
+  }
   if (select.value === "uz") {
      queue.innerHTML = `Buyurtmangiz raqami ${random}`;
   } else if (select.value === "ru") {
