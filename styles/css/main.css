@@ -9,6 +9,10 @@ body {
   background-color: #ccc;
   font-family: sans-serif;
 }
+body.dark {
+  background-color: rgb(1, 1, 42);
+  color: cornsilk;
+}
 
 .noni-b {
   display: flex;
