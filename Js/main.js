@@ -280,8 +280,6 @@ send.addEventListener("click", (e) => {
     queue.innerHTML = `Your queue is ${random}`;
   }
   
-
-  
 });
 
 
