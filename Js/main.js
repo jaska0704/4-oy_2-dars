@@ -21,9 +21,9 @@ function changeURLLanguage() {
     hero1.style["display"] = "none";
 }
 
-button.addEventListener("click", ()=> {
-  body.classList.toggle("dark");
-});
+// button.addEventListener("click", ()=> {
+//   body.classList.toggle("dark");
+// });
 
 
 function changeLanguage() {
@@ -277,15 +277,6 @@ let send = document.querySelector(".send");
 send.addEventListener("click", (e) => {
   e.preventDefault();
   let random = Math.floor(Math.random() * 25) + 10;
-  if(hisob === 6135 ){
-    alert("siz hali buyurtma bermadingiz")
-  }
-  if (hisob === 43.8) {
-    alert("вы еще не оформили заказ");
-  }
-  if (hisob === 0.5) {
-    alert("you haven't placed an order yet");
-  }
   if (select.value === "uz") {
      queue.innerHTML = `Buyurtmangiz raqami ${random}`;
   } else if (select.value === "ru") {
@@ -293,7 +284,10 @@ send.addEventListener("click", (e) => {
   } else {
     queue.innerHTML = `Your queue is ${random}`;
   }
+
   
 });
+
+
 
 

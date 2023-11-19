@@ -10,8 +10,8 @@ body {
   // background-color: #ccc;
   font-family: sans-serif;
   background-color: var(--body-color);
-  transition: 0.5s ease-in-out;
-  // height: 100vh;
+  transition: .5s ease-in-out ;
+  
 
 }
 .noni-b {
@@ -45,12 +45,12 @@ select{
 
 .hero{
   position: absolute;
-  top: 00%;
+  top: 0%;
   right: 0;
   left: 0%;
   bottom: 0;
   width: 100%;
-  height: auto;
+  height: 110%;
   background-color: #d1d1d1;
   display: flex;
   align-items: center;
@@ -115,6 +115,7 @@ label{
   margin-top: 20px;
   margin-right: 100px;
   object-fit: cover;
+  border: 5px solid green
 }
 
 

@@ -17,6 +17,17 @@ inputFile.onchange = function () {
   profilePic.src = URL.createObjectURL(inputFile.files[0]);
 };
 
+btn.addEventListener("click", (e) => {
+
+  if (img["src"].includes("profil")) {
+    hero.style["display"] = "none";
+    alert("Iltimos rasm kiriting!");
+  } else {
+    hero.style["display"] = "none";
+    img2["src"] = img["src"] ;
+    // h2.textContent = "Your profile pic"console.log(img);
+  }
+})
 closeX.addEventListener("click", () => {
   hero.style["display"] = "none"
  
@@ -24,25 +35,7 @@ closeX.addEventListener("click", () => {
   
 })
 
-btn.addEventListener("click", () => {
-  if (img["src"].includes("profil")) {
-    hero.style["display"] = "none";
-    alert("Iltimos rasm kiriting!");
-  } else {
-    hero.style["display"] = "none";
-
-    img2["src"] = img["src"] ;
-    // h2.textContent = "Your profile pic"
-
-  
-    
-    console.log(img);
-  }
-})
 
 
-// deleteInput.addEventListener("click", () => {
-// if()
 
-// })
 
