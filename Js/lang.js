@@ -79,4 +79,12 @@ const langArr = {
     en: "Send",
     ru: "Отправлять",
   },
+
+  h2: {
+    uz: "Sizning profil rasmingiz",
+    en: "Your profile pic",
+    ru: "Ваша аватарка",
+  },
+
+
 };

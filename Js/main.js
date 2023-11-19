@@ -21,9 +21,9 @@ function changeURLLanguage() {
     hero1.style["display"] = "none";
 }
 
-button.addEventListener("click", ()=> {
-  body.classList.toggle("dark");
-});
+// button.addEventListener("click", ()=> {
+//   body.classList.toggle("dark");
+// });
 
 
 function changeLanguage() {
@@ -284,7 +284,10 @@ send.addEventListener("click", (e) => {
   } else {
     queue.innerHTML = `Your queue is ${random}`;
   }
+
   
 });
+
+
 
 
